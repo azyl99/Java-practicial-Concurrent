@@ -1,0 +1,27 @@
+
+apply plugin: 'java'
+
+
+allprojects {
+    apply plugin: 'java'
+
+    dependencies {
+        compile group: 'junit', name: 'junit', version: '3.8.1'
+//        testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.2.0'
+    }
+
+    sourceSets {
+        main {
+            java {
+                srcDirs = ["main"]
+            }
+        }
+        test {
+            java {
+                srcDirs = ["main"]
+            }
+        }
+    }
+}
+
+
